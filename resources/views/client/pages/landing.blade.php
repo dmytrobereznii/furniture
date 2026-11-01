@@ -10,7 +10,7 @@
                     <ul>
                         <li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
                             <!-- main image for revolution slider -->
-                            <img src="{{ asset('img/family.jpg') }}" alt="image description" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
+                            <img src="{{ asset('img/family.jpg') }}" alt="Зображення" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
                             <div class="slider-sub-title text-white tp-caption tp-resizeme rs-parallaxlevel-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','middle','middle']" data-voffset="['145','100','10','-30']" data-width="['1200','960','720','540']" data-textalign="center" data-fontsize="['35','28','20','20']" data-lineheight="['72','62','50','50']" data-letterspacing="5" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-paddingright="[25,25,25,25]" data-paddingleft="[25,25,25,25]">
                                 Індивідуальність. Сервіс. Якість.
                             </div>
@@ -34,7 +34,7 @@
                         <h2 class="block-main-heading text-black">Меблевий майстер</h2>
                     </div>
                     <div class="description text-center container-md">
-                        <p>Проектую та виготовляю корпусні меблі за індивідуальними замовленнями для дому,
+                        <p>Проєктую та виготовляю корпусні меблі за індивідуальними замовленнями для дому,
                             офісу та торгових точок. Перетворюю Ваші ідеї на реальність, від ескізу до результату.
                             Сприяю створенню комфорту, затишку та максимальної зручності для Вашого Дому та Бізнесу!</p>
                     </div>
@@ -102,7 +102,7 @@
                                         </div>
                                         <div class="icon-desc">
                                             <div class="des">
-                                                <p>Попередня сума за меблі з урахуванням обраного матеріалу, попереднього проекту</p>
+                                                <p>Попередня сума за меблі з урахуванням обраного матеріалу, попереднього проєкту</p>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
                                         </div>
                                         <div class="icon-desc">
                                             <div class="des">
-                                                <p>Проект меблів з урахуванням усіх деталей та побажань клієнта</p>
+                                                <p>Проєкт меблів з урахуванням усіх деталей та побажань клієнта</p>
                                             </div>
                                         </div>
                                     </div>
@@ -168,31 +168,31 @@
                     <div class="row">
                         <a href="{{ route('kitchen') }}" class="info-block info-block-v2 block-1 text-center col-sm-6 col-lg-3">
                             <div class="icon">
-                                <img src="{{ asset('img/icons/kitchen.png') }}" alt="Kitchen Logo">
+                                <img src="{{ asset('img/icons/kitchen.png') }}" alt="Кухні">
                             </div>
                             <h3 class="block-title">Кухні</h3>
                         </a>
                         <a href="{{ route('hall') }}" class="info-block info-block-v2 block-2 text-center col-sm-6 col-lg-2">
                             <div class="icon">
-                                <img src="{{ asset('img/icons/hall.png') }}" alt="Hall Logo">
+                                <img src="{{ asset('img/icons/hall.png') }}" alt="Шафи та передпокій">
                             </div>
                             <h3 class="block-title">Шафи та передпокій</h3>
                         </a>
                         <a href="{{ route('commercial') }}" class="info-block info-block-v2 block-3 text-center col-sm-4 col-lg-2">
                             <div class="icon">
-                                <img src="{{ asset('img/icons/commercial.png') }}" alt="Commercial Logo">
+                                <img src="{{ asset('img/icons/commercial.png') }}" alt="Офісні та торгові меблі">
                             </div>
                             <h3 class="block-title">Офісні та торгові меблі</h3>
                         </a>
                         <a href="{{ route('wardrobe') }}" class="info-block info-block-v2 block-5 text-center col-sm-4 col-lg-2">
                             <div class="icon">
-                                <img src="{{ asset('img/icons/wardrobe.png') }}" alt="Wardrobe Logo">
+                                <img src="{{ asset('img/icons/wardrobe.png') }}" alt="Гардероби та тумби">
                             </div>
                             <h3 class="block-title">Гардероби та тумби</h3>
                         </a>
                         <a href="{{ route('children') }}" class="info-block info-block-v2 block-4 text-center col-sm-4 col-lg-3">
                             <div class="icon">
-                                <img src="{{ asset('img/icons/children.png') }}" alt="Children Logo">
+                                <img src="{{ asset('img/icons/children.png') }}" alt="Дитячі меблі">
                             </div>
                             <h3 class="block-title">Дитячі меблі</h3>
                         </a>
@@ -204,7 +204,7 @@
                 <div class="container">
                         <div class="contact-container">
                             <div class="demo-wrapper content-block text-center py-0">
-                                <h3>Зворотній зв'язок</h3>
+                                <h3>Зворотний зв'язок</h3>
                                 <div class="divider-v2"></div>
                             </div>
                             <div class="row">
@@ -281,38 +281,38 @@
                     </div>
             </section>
             <div class="map-holder embed-responsive-21by9">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780316407!2d30.252511957059642!3d50.4016990487754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1616951269047!5m2!1sru!2sua" height="450" style="border:0;" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780316407!2d30.252511957059642!3d50.4016990487754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1616951269047!5m2!1suk!2sua" height="450" style="border:0;" loading="lazy"></iframe>
             </div>
             <aside class="content-block">
                 <div class="container">
                     <div class="logo-container">
                         <div class="owl-carousel logo-slide" id="waituk-owl-slide-4">
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/blum.png') }}" alt="Blum Logo">
+                                <img src="{{ asset('img/partners/blum.png') }}" alt="Логотип Blum">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/rehau.png') }}" alt="Rehau Logo">
+                                <img src="{{ asset('img/partners/rehau.png') }}" alt="Логотип Rehau">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/muller.png') }}" alt="Muller Logo">
+                                <img src="{{ asset('img/partners/muller.png') }}" alt="Логотип Muller">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/cleaf.jpg') }}" alt="Cleaf Logo">
+                                <img src="{{ asset('img/partners/cleaf.jpg') }}" alt="Логотип Cleaf">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/egger.png') }}" alt="Egger Logo">
+                                <img src="{{ asset('img/partners/egger.png') }}" alt="Логотип Egger">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/swiss.jpg') }}" alt="Swiss Logo">
+                                <img src="{{ asset('img/partners/swiss.jpg') }}" alt="Логотип Swiss">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/hettich.jpg') }}" alt="Hettich Logo">
+                                <img src="{{ asset('img/partners/hettich.jpg') }}" alt="Логотип Hettich">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/kronospan.png') }}" alt="Kronospan Logo">
+                                <img src="{{ asset('img/partners/kronospan.png') }}" alt="Логотип Kronospan">
                             </div>
                             <div class="slide-item">
-                                <img src="{{ asset('img/partners/luxeform.png') }}" alt="Luxeform Logo">
+                                <img src="{{ asset('img/partners/luxeform.png') }}" alt="Логотип Luxeform">
                             </div>
                         </div>
                     </div>

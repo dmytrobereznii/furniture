@@ -9,13 +9,13 @@
                                 <a href="{{ route('kitchen') }}" data-title="Кухні"> Кухні </a>
                             </li>
                             <li>
-                                <a href="{{ route('hall') }}" data-title="Шкафы/Прихожие"> Шафи / Передпокій </a>
+                                <a href="{{ route('hall') }}" data-title="Шафи/Передпокій"> Шафи / Передпокій </a>
                             </li>
                             <li>
-                                <a href="{{ route('commercial') }}" data-title="Офисная/Торговая мебель"> Офісні / Торгові меблі </a>
+                                <a href="{{ route('commercial') }}" data-title="Офісні/Торгові меблі"> Офісні / Торгові меблі </a>
                             </li>
                             <li>
-                                <a href="{{ route('wardrobe') }}" data-title="Гардеробы/Тумбы"> Гардероби / Тумби </a>
+                                <a href="{{ route('wardrobe') }}" data-title="Гардероби/Тумби"> Гардероби / Тумби </a>
                             </li>
                             <li>
                                 <a href="{{ route('children') }}" data-title="Дитячі меблі"> Дитячі меблі </a>
@@ -34,7 +34,7 @@
     </div>
     <div class="footer-bottom text-center">
         <div class="container">
-            <p>© Copyright <b>Меблевий майстер {{ date('Y') }}</b>. All Rights Reserved - Built by Me </p>
+            <p>© <b>Меблевий майстер {{ date('Y') }}</b>. Усі права захищено.</p>
         </div>
     </div>
 </footer>

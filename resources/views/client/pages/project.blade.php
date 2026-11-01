@@ -11,7 +11,7 @@
                 <div class="centered">
                     <div class="container">
                         <div class="visual-text visual-center">
-                            <h1 class="visual-title visual-sub-title">Про проект</h1>
+                            <h1 class="visual-title visual-sub-title">Про проєкт</h1>
                             <div class="breadcrumb-block">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="{{ route('landing') }}">Меблевий майстер</a></li>
@@ -37,12 +37,12 @@
                             <div class="bottom-space-medium-only col-lg-6">
                                 <div class="img-block">
                                     <a class="fancybox d-none d-md-block" rel="group" href="{{ $project['primaryImage']->getUrl() }}">
-                                        <img src="{{ $project['primaryImage']->getUrl() }}" alt="images">
+                                        <img src="{{ $project['primaryImage']->getUrl() }}" alt="Зображення">
                                     </a>
-                                    <img class="d-block d-sm-block d-md-none" src="{{ $project['primaryImage']->getUrl() }}" alt="images">
+                                    <img class="d-block d-sm-block d-md-none" src="{{ $project['primaryImage']->getUrl() }}" alt="Зображення">
                                 </div>
                                 <div class="portfolio-des py-4">
-                                    <h2 class="text-block-title">Опис проекту:</h2>
+                                    <h2 class="text-block-title">Опис проєкту:</h2>
                                     {!! $project['info']->description !!}
                                 </div>
                             </div>
@@ -51,9 +51,9 @@
                                     @foreach($project['secondaryImages'] as $project)
                                         <div class="col-small col-md-6">
                                             <a class="fancybox fancybox d-none d-md-block" rel="group" href="{{ $project->getUrl() }}">
-                                                <img src="{{ $project->getUrl() }}" alt="images">
+                                                <img src="{{ $project->getUrl() }}" alt="Зображення">
                                             </a>
-                                            <img class="d-block d-sm-block d-md-none" src="{{ $project->getUrl() }}" alt="images">
+                                            <img class="d-block d-sm-block d-md-none" src="{{ $project->getUrl() }}" alt="Зображення">
                                         </div>
                                     @endforeach
                                 </div>
@@ -63,16 +63,16 @@
                                 <div class="row d-flex align-items-center">
                                     <div class="col-small col-md-3">
                                         <a class="fancybox d-none d-md-block" rel="group" href="{{ $project['primaryImage']->getUrl() }}">
-                                            <img src="{{ $project['primaryImage']->getUrl() }}" alt="images">
+                                            <img src="{{ $project['primaryImage']->getUrl() }}" alt="Зображення">
                                         </a>
-                                        <img class="d-block d-sm-block d-md-none" src="{{ $project['primaryImage']->getUrl() }}" alt="images">
+                                        <img class="d-block d-sm-block d-md-none" src="{{ $project['primaryImage']->getUrl() }}" alt="Зображення">
                                     </div>
                                     @foreach($project['secondaryImages'] as $project)
                                         <div class="col-small col-md-3">
                                             <a class="fancybox fancybox d-none d-md-block" rel="group" href="{{ $project->getUrl() }}">
-                                                <img src="{{ $project->getUrl() }}" alt="images">
+                                                <img src="{{ $project->getUrl() }}" alt="Зображення">
                                             </a>
-                                            <img class="d-block d-sm-block d-md-none" src="{{ $project->getUrl() }}" alt="images">
+                                            <img class="d-block d-sm-block d-md-none" src="{{ $project->getUrl() }}" alt="Зображення">
                                         </div>
                                     @endforeach
                                 </div>

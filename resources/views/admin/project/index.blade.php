@@ -3,7 +3,7 @@
 @section('breadcrumbs')
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route("home") }}">Главная</a></li>
+            <li class="breadcrumb-item"><a href="{{ route("home") }}">Головна</a></li>
             <li class="breadcrumb-item active">{{ $categoryName }}</li>
         </ol>
     </nav>
@@ -12,36 +12,36 @@
 @section('main')
     <div class="card">
         <div class="card-body">
-            <a href="{{ route('admin.categories.projects.create', ['categoryKey' => $categoryKey]) }}" type="button" class="btn btn-primary mb-3">Добавить проект</a>
-            <a href="{{ route('admin.categories.meta.edit', ['categoryKey' => $categoryKey]) }}" type="button" class="btn btn-secondary mb-3">Редактировать мета данные категории</a>
+            <a href="{{ route('admin.categories.projects.create', ['categoryKey' => $categoryKey]) }}" type="button" class="btn btn-primary mb-3">Додати проєкт</a>
+            <a href="{{ route('admin.categories.meta.edit', ['categoryKey' => $categoryKey]) }}" type="button" class="btn btn-secondary mb-3">Редагувати метадані категорії</a>
             <br>
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Название</th>
-                        <th scope="col">Описание</th>
+                        <th scope="col">Назва</th>
+                        <th scope="col">Опис</th>
                         <th scope="col"></th>
-                        <th scope="col">Действия</th>
+                        <th scope="col">Дії</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($projects as $project)
                         <tr>
                             <th scope="row">{{ $project->id }}</th>
-                            <td>{!! $project->name ?? "<i>Отсутствует</i>" !!}</td>
-                            <td>{{ strip_tags($project->description ? mb_substr($project->description, 0, 50) . '...' : "<i>Отсутствует</i>") }}</td>
+                            <td>{!! $project->name ?? "<i>Немає</i>" !!}</td>
+                            <td>{{ strip_tags($project->description ? mb_substr($project->description, 0, 50) . '...' : "<i>Немає</i>") }}</td>
                             <td>
-                                <img src="{{ $project->getMedia('primaryImage')[0]->getUrl() }}" width="120" alt="Photo">
+                                <img src="{{ $project->getMedia('primaryImage')[0]->getUrl() }}" width="120" alt="Фото">
                             </td>
                             <td>
-                                <a href="{{ route('admin.categories.projects.edit', ['categoryKey' => $categoryKey, 'id' => $project->id]) }}" type="button" class="btn btn-success mb-3">Редактировать</a>
+                                <a href="{{ route('admin.categories.projects.edit', ['categoryKey' => $categoryKey, 'id' => $project->id]) }}" type="button" class="btn btn-success mb-3">Редагувати</a>
                                 <a href="{{ route('admin.categories.projects.delete', ['categoryKey' => $categoryKey, 'id' => $project->id]) }}"
                                    type="button"
                                    class="btn btn-danger mb-3"
-                                   onclick="return confirm('Уверены, что хотите удалить проект?');">
-                                    Удалить
+                                   onclick="return confirm('Ви впевнені, що хочете видалити проєкт?');">
+                                    Видалити
                                 </a>
                             </td>
                         </tr>

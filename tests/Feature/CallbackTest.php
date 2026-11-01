@@ -37,6 +37,7 @@ class CallbackTest extends TestCase
         $response = $this->post('/callback', $this->validForm());
 
         $response->assertRedirect(self::SUCCESS_URL);
+        $response->assertSessionHas('callback', 'Вашу заявку збережено!');
         $this->assertSame(['111', '222'], $chatIds);
         $this->assertDatabaseHas('callbacks', ['phone' => '0000000000']);
     }

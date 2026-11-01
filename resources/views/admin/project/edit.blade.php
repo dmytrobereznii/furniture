@@ -3,10 +3,10 @@
 @section('breadcrumbs')
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route("home") }}">Главная</a></li>
+            <li class="breadcrumb-item"><a href="{{ route("home") }}">Головна</a></li>
             <li class="breadcrumb-item"><a href="{{ route('admin.categories.projects.index', ['categoryKey' => $categoryKey]) }}">{{ $categoryName }}</a></li>
-            <li class="breadcrumb-item active">Проект №{{ $project->id }}</li>
-            <li class="breadcrumb-item active" aria-current="page">Редактировать</li>
+            <li class="breadcrumb-item active">Проєкт №{{ $project->id }}</li>
+            <li class="breadcrumb-item active" aria-current="page">Редагувати</li>
         </ol>
     </nav>
 @endsection
@@ -27,33 +27,33 @@
                 @csrf
                 <input type="hidden" name="category" value="{{ $categoryKey }}">
                 <input type="hidden" name="projectId" value="{{ $project->id }}">
-                <h3>Информация о проекте</h3>
+                <h3>Інформація про проєкт</h3>
                 <div class="form-group">
-                    <label for="name">Название проекта</label>
+                    <label for="name">Назва проєкту</label>
                     <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" value="{{ $project->name }}">
-                    <small id="nameHelp" class="form-text text-muted">Необязательно</small>
+                    <small id="nameHelp" class="form-text text-muted">Необов'язково</small>
                 </div>
                 <div class="form-group">
                     <label for="slug">Slug</label>
                     <input type="text" name="slug" class="form-control" id="slug" aria-describedby="slug" value="{{ $project->slug }}">
-                    <small id="slug" class="form-text text-muted">Обязательно</small>
+                    <small id="slug" class="form-text text-muted">Обов'язково</small>
                 </div>
                 <div class="form-group">
-                    <label for="description">Описание</label>
+                    <label for="description">Опис</label>
                     <textarea name="description" class="form-control rich" id="description" rows="15" aria-describedby="descriptionHelp">
                         {!! $project->description !!}
                     </textarea>
-                    <small id="descriptionHelp" class="form-text text-muted">Необязательно</small>
+                    <small id="descriptionHelp" class="form-text text-muted">Необов'язково</small>
                 </div>
-                <h3>Фотографии</h3>
+                <h3>Фотографії</h3>
                 <div class="form-group">
                     <div class="table-responsive">
                         <table class="table table-bordered">
                         <tr>
                             <td>
-                                <b>Фоновое изображение *</b>
+                                <b>Фонове зображення *</b>
                                 <br>
-                                <small id="nameHelp" class="form-text text-muted">Обязательно</small>
+                                <small id="nameHelp" class="form-text text-muted">Обов'язково</small>
                             </td>
                             <td>
                                 <input name="backgroundImage" type="file" id="primaryFile" onchange="document.getElementById('image1').src = window.URL.createObjectURL(this.files[0])">
@@ -64,9 +64,9 @@
                         </tr>
                         <tr>
                             <td>
-                                <b>Главное изображение *</b>
+                                <b>Головне зображення *</b>
                                 <br>
-                                <small id="nameHelp" class="form-text text-muted">Обязательно</small>
+                                <small id="nameHelp" class="form-text text-muted">Обов'язково</small>
                             </td>
                             <td>
                                 <input name="primaryImage" type="file" id="primaryFile" onchange="document.getElementById('image2').src = window.URL.createObjectURL(this.files[0])">
@@ -77,9 +77,9 @@
                         </tr>
                         <tr>
                             <td colspan="3">
-                                <b>Дополнительные фото</b>
+                                <b>Додаткові фото</b>
                                 <br>
-                                <small id="nameHelp" class="form-text text-muted">Необязательно</small>
+                                <small id="nameHelp" class="form-text text-muted">Необов'язково</small>
                             </td>
                         </tr>
                         @foreach(range(1, 10) as $image)
@@ -95,8 +95,8 @@
                                         <a href="{{ route('admin.categories.projects.deleteImage', ['categoryKey' => $categoryKey, 'id' => $project->id, 'image' => "image{$image}"]) }}"
                                            type="button"
                                            class="btn btn-danger mb-3"
-                                           onclick="return confirm('Уверены, что хотите удалить изображение?');">
-                                            Удалить
+                                           onclick="return confirm('Ви впевнені, що хочете видалити зображення?');">
+                                            Видалити
                                         </a>
                                     @endif
                                 </td>
@@ -108,21 +108,21 @@
                     </table>
                     </div>
                 </div>
-                <h3>Мета данные</h3>
+                <h3>Метадані</h3>
                 <div class="form-group">
-                    <label for="name">Заголовок страницы</label>
+                    <label for="name">Заголовок сторінки</label>
                     <input name="meta_title" value="{{ $project->meta_title }}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="name">Ключевые слова</label>
+                    <label for="name">Ключові слова</label>
                     <textarea name="meta_keywords" rows="7" class="form-control">{{ $project->meta_keywords }}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="name">Описание</label>
+                    <label for="name">Опис</label>
                     <textarea name="meta_description" rows="7" class="form-control">{{ $project->meta_description }}</textarea>
                 </div>
                 <hr>
-                <button type="submit" class="btn btn-success">Сохранить</button>
+                <button type="submit" class="btn btn-success">Зберегти</button>
             </form>
         </div>
     </div>

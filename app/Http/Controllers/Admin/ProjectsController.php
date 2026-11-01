@@ -78,7 +78,7 @@ class ProjectsController extends Controller
 
         $record->save();
 
-        $request->session()->flash('status', 'Проект успешно добавлен!');
+        $request->session()->flash('status', 'Проєкт успішно додано!');
 
         return redirect()->route('admin.categories.projects.edit', [
             'categoryKey' => $category,
@@ -146,7 +146,7 @@ class ProjectsController extends Controller
 
         $record->save();
 
-        $request->session()->flash('status', 'Проект успешно отредактирован!');
+        $request->session()->flash('status', 'Проєкт успішно відредаговано!');
 
         return redirect()->route("admin.categories.projects.edit", ['categoryKey' => $categoryKey, 'id' => $id]);
     }
@@ -168,7 +168,7 @@ class ProjectsController extends Controller
             $project->clearMediaCollection('secondaryImages');
             $project->delete();
 
-            session()->flash('status', 'Проект успешно удален!');
+            session()->flash('status', 'Проєкт успішно видалено!');
         }
 
         return redirect()->route('admin.categories.projects.index', [
@@ -191,7 +191,7 @@ class ProjectsController extends Controller
         if (isset($project)) {
             $project->clearMediaCollection($imageName);
 
-            session()->flash('status', 'Фото успешно удалено!');
+            session()->flash('status', 'Фото успішно видалено!');
         }
 
         return redirect()->route("admin.categories.projects.edit", ['categoryKey' => $categoryKey, 'id' => $id]);

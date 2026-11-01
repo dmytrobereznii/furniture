@@ -48,6 +48,6 @@ class CallbackController extends Controller
      */
     private function success()
     {
-        return redirect('/#contact-form')->with('callback', 'Ваша заявка сохранена!');
+        return redirect('/#contact-form')->with('callback', 'Вашу заявку збережено!');
     }
 }

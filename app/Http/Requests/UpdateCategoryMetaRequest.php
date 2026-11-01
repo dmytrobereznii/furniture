@@ -38,12 +38,12 @@ class UpdateCategoryMetaRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => 'Укажите заголовок страницы',
-            'title.max' => 'Максимальная длина поля 50000 символов',
-            'keywords.required' => 'Укажите ключевые слова',
-            'keywords.max' => 'Максимальная длина поля 50000 символов',
-            'description.required' => 'Укажите описание',
-            'description.max' => 'Максимальная длина поля 50000 символов',
+            'title.required' => 'Вкажіть заголовок сторінки',
+            'title.max' => 'Максимальна довжина поля 50000 символів',
+            'keywords.required' => 'Вкажіть ключові слова',
+            'keywords.max' => 'Максимальна довжина поля 50000 символів',
+            'description.required' => 'Вкажіть опис',
+            'description.max' => 'Максимальна довжина поля 50000 символів',
         ];
     }
 }

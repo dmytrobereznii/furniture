@@ -6,19 +6,19 @@
         <div class="col-md-3">
             <div class="list-group">
                 <a href="{{ route('admin.categories.projects.index', ['categoryKey' => 'kitchen']) }}" class="list-group-item list-group-item-action @if(strpos(url()->current(), 'kitchen')  !== false) active @endif">
-                    Кухни
+                    Кухні
                 </a>
                 <a href="{{ route('admin.categories.projects.index', ['categoryKey' => 'hall']) }}" class="list-group-item list-group-item-action @if(strpos(url()->current(), 'hall')  !== false) active @endif">
-                    Шкафы / Прихожие
+                    Шафи / Передпокій
                 </a>
                 <a href="{{ route('admin.categories.projects.index', ['categoryKey' => 'commercial']) }}" class="list-group-item list-group-item-action @if(strpos(url()->current(), 'commercial')  !== false) active @endif">
-                    Офисная / Торговая мебель
+                    Офісні / Торгові меблі
                 </a>
                 <a href="{{ route('admin.categories.projects.index', ['categoryKey' => 'wardrobe']) }}" class="list-group-item list-group-item-action @if(strpos(url()->current(), 'wardrobe')  !== false) active @endif">
-                    Гардеробы / Тумбы
+                    Гардероби / Тумби
                 </a>
                 <a href="{{ route('admin.categories.projects.index', ['categoryKey' => 'children']) }}" class="list-group-item list-group-item-action @if(strpos(url()->current(), 'children')  !== false) active @endif">
-                    Детская мебель
+                    Дитячі меблі
                 </a>
             </div>
         </div>

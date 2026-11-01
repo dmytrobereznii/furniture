@@ -52,7 +52,7 @@ class MetaDataController extends Controller
         $record->description = $request->get('description');
         $record->save();
 
-        session()->flash('status', 'Мета данные успешно отредактированы!');
+        session()->flash('status', 'Метадані успішно відредаговано!');
 
         return redirect()->route('admin.categories.meta.edit', [
             'categoryKey' => $categoryKey

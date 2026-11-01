@@ -48,19 +48,19 @@
                             <a href="{{ route('kitchen') }}" data-title="Кухні"> Кухні </a>
                         </li>
                         <li>
-                            <a href="{{ route('hall') }}" data-title="Шкафы/Прихожие"> Шафи / Передпокій </a>
+                            <a href="{{ route('hall') }}" data-title="Шафи/Передпокій"> Шафи / Передпокій </a>
                         </li>
                         <li>
-                            <a href="{{ route('commercial') }}" data-title="Офисная/Торговая мебель"> Офісні / Торгові меблі </a>
+                            <a href="{{ route('commercial') }}" data-title="Офісні/Торгові меблі"> Офісні / Торгові меблі </a>
                         </li>
                         <li>
-                            <a href="{{ route('wardrobe') }}" data-title="Гардеробы/Тумбы"> Гардероби / Тумби </a>
+                            <a href="{{ route('wardrobe') }}" data-title="Гардероби/Тумби"> Гардероби / Тумби </a>
                         </li>
                         <li>
                             <a href="{{ route('children') }}" data-title="Дитячі меблі"> Дитячі меблі </a>
                         </li>
                         <li class="d-flex align-items-center justify-content-center">
-                            <a href="{{ route('landing') }}#contact-form" data-title="Контакты" class="btn btn-tertiary btn-small-font btn-secondary has-radius-huge"> Передзвонити </a>
+                            <a href="{{ route('landing') }}#contact-form" data-title="Контакти" class="btn btn-tertiary btn-small-font btn-secondary has-radius-huge"> Передзвонити </a>
                         </li>
                         <li class="d-flex align-items-center justify-content-center mobile-phone">
                             <a href="tel:+380638443748" class="nav-link"><span class="custom-icon-phone-ring"></span> +38 (063) 844 37 48</a>

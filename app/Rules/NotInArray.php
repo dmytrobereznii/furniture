@@ -42,6 +42,6 @@ class NotInArray implements Rule
      */
     public function message()
     {
-        return 'Вы внесены в черный список. Пожалуйста, обратитесь по телефону.';
+        return 'Вас внесено до чорного списку. Будь ласка, зателефонуйте нам.';
     }
 }

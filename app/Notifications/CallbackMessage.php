@@ -31,9 +31,9 @@ class CallbackMessage extends Notification
     {
         return TelegramMessage::create()
             ->to($notifiable->telegramChatId)
-            ->content("Новая заявка!
-*Имя:* _{$notifiable->name}_
-*Номер телефона:* _{$notifiable->phone}_
-*Комментарий:* _{$notifiable->message}_");
+            ->content("Нова заявка!
+*Ім'я:* _{$notifiable->name}_
+*Номер телефону:* _{$notifiable->phone}_
+*Коментар:* _{$notifiable->message}_");
     }
 }

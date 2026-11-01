@@ -3,9 +3,9 @@
 @section('breadcrumbs')
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ route("home") }}">Главная</a></li>
+            <li class="breadcrumb-item"><a href="{{ route("home") }}">Головна</a></li>
             <li class="breadcrumb-item"><a href="{{ route('admin.categories.projects.index', ['categoryKey' => $category]) }}">{{ $categoryName }}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Редактировать мета данные</li>
+            <li class="breadcrumb-item active" aria-current="page">Редагувати метадані</li>
         </ol>
     </nav>
 @endsection
@@ -26,19 +26,19 @@
                 @csrf
                 <input type="hidden" name="category" value="{{ $category }}">
                 <div class="form-group">
-                    <label for="name">Заголовок страницы *</label>
+                    <label for="name">Заголовок сторінки *</label>
                     <input name="title" value="{{ $meta->title }}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="name">Ключевые слова *</label>
+                    <label for="name">Ключові слова *</label>
                     <textarea name="keywords" rows="7" class="form-control">{{ $meta->keywords }}</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="name">Описание *</label>
+                    <label for="name">Опис *</label>
                     <textarea name="description" rows="7" class="form-control">{{ $meta->description }}</textarea>
                 </div>
                 <hr>
-                <button type="submit" class="btn btn-success">Сохранить</button>
+                <button type="submit" class="btn btn-success">Зберегти</button>
             </form>
         </div>
     </div>

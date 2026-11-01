@@ -1,0 +1,21 @@
+{
+    "Confirm Password": "Підтвердьте пароль",
+    "E-Mail Address": "Електронна пошта",
+    "Forbidden": "Доступ заборонено",
+    "Forgot Your Password?": "Забули пароль?",
+    "Login": "Увійти",
+    "Logout": "Вийти",
+    "Not Found": "Сторінку не знайдено",
+    "Page Expired": "Сторінка застаріла. Оновіть її та спробуйте ще раз",
+    "Password": "Пароль",
+    "Please confirm your password before continuing.": "Підтвердьте пароль, щоб продовжити.",
+    "Register": "Реєстрація",
+    "Remember Me": "Запам'ятати мене",
+    "Reset Password": "Скинути пароль",
+    "Send Password Reset Link": "Надіслати посилання для скидання пароля",
+    "Server Error": "Помилка сервера",
+    "Service Unavailable": "Сервіс тимчасово недоступний",
+    "Toggle navigation": "Меню",
+    "Too Many Requests": "Забагато запитів. Спробуйте пізніше",
+    "Unauthorized": "Потрібен вхід"
+}

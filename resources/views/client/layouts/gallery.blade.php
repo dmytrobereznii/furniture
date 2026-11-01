@@ -13,7 +13,7 @@
                                 <div class="image-wrapper">
                                     <img src="{{ $project->getMedia('primaryImage')[0]->getUrl() }}"
                                          style="object-fit: cover;"
-                                         alt="images description">
+                                         alt="Зображення">
                                 </div>
                                 <div class="overlay-gallery">
                                     Детальніше

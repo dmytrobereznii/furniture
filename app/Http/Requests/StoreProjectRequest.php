@@ -45,19 +45,19 @@ class StoreProjectRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.max' => 'Максимальная длина поля 255 символов',
-            'description.max' => 'Максимальная длина поля 50000 символов',
-            'backgroundImage.required' => 'Добавьте фоновое фото',
-            'primaryImage.required' => 'Добавьте основное фото',
-            'slug.required' => 'Добавьте Slug',
-            'slug.unique' => 'Slug должен быть уникальным',
-            'slug.regex' => 'Slug должен быть в правильном формате',
-            'backgroundImage.max' => 'Максимальный дополнительного размер фото 5МБ',
-            'primaryImage.max' => 'Максимальный дополнительного размер фото 5МБ',
-            'secondaryImage.max' => 'Максимальный дополнительного азмер фото 5МБ',
-            'meta_title.max' => 'Максимальная длина мета заголовка страницы 50000 символов',
-            'meta_keywords.max' => 'Максимальная длина мета ключевых слов 50000 символов',
-            'meta_description.max' => 'Максимальная длина мета описания 50000 символов',
+            'name.max' => 'Максимальна довжина поля 255 символів',
+            'description.max' => 'Максимальна довжина поля 50000 символів',
+            'backgroundImage.required' => 'Додайте фонове фото',
+            'primaryImage.required' => 'Додайте основне фото',
+            'slug.required' => 'Додайте Slug',
+            'slug.unique' => 'Slug має бути унікальним',
+            'slug.regex' => 'Slug має бути у правильному форматі',
+            'backgroundImage.max' => 'Максимальний розмір фото 5 МБ',
+            'primaryImage.max' => 'Максимальний розмір фото 5 МБ',
+            'secondaryImage.max' => 'Максимальний розмір фото 5 МБ',
+            'meta_title.max' => 'Максимальна довжина мета-заголовка сторінки 50000 символів',
+            'meta_keywords.max' => 'Максимальна довжина мета-ключових слів 50000 символів',
+            'meta_description.max' => 'Максимальна довжина мета-опису 50000 символів',
         ];
     }
 }
