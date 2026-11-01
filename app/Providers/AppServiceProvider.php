@@ -13,7 +13,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $ideHelper = \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class;
+
+        if ($this->app->isLocal() && class_exists($ideHelper)) {
+            $this->app->register($ideHelper);
+        }
     }
 
     /**
