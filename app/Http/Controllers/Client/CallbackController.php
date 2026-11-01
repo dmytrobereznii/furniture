@@ -7,6 +7,7 @@ use App\Http\Requests\CallbackRequest;
 use App\Models\Callback;
 use App\Notifications\CallbackMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Throwable;
 
 class CallbackController extends Controller
@@ -17,6 +18,12 @@ class CallbackController extends Controller
      */
     public function store(CallbackRequest $request)
     {
+        if ($request->isSpam()) {
+            Log::warning('Callback rejected as spam');
+
+            return $this->success();
+        }
+
         $record = new Callback();
         $record->name = $request->get('name');
         $record->phone = $request->get('phone');
@@ -33,6 +40,14 @@ class CallbackController extends Controller
             }
         }
 
+        return $this->success();
+    }
+
+    /**
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    private function success()
+    {
         return redirect('/#contact-form')->with('callback', 'Ваша заявка сохранена!');
     }
 }

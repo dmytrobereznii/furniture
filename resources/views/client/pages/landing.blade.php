@@ -212,6 +212,10 @@
                                     <!-- contact form -->
                                     <form action="{{ route('callback') }}" method="post" id="contact_form" class="waituk_contact-form">
                                         @csrf
+                                        <input type="hidden" name="started_at" value="{{ encrypt(now()->timestamp) }}">
+                                        <div style="position: absolute; left: -10000px;" aria-hidden="true">
+                                            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
