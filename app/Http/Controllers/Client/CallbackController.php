@@ -7,6 +7,7 @@ use App\Http\Requests\CallbackRequest;
 use App\Models\Callback;
 use App\Notifications\CallbackMessage;
 use Illuminate\Http\Request;
+use Throwable;
 
 class CallbackController extends Controller
 {
@@ -24,7 +25,12 @@ class CallbackController extends Controller
 
         foreach (Callback::getUsersForNotifications() as $chatId) {
             $record->telegramChatId = $chatId;
-            $record->notify(new CallbackMessage());
+
+            try {
+                $record->notify(new CallbackMessage());
+            } catch (Throwable $e) {
+                report($e);
+            }
         }
 
         return redirect('/#contact-form')->with('callback', 'Ваша заявка сохранена!');
